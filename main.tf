@@ -9,4 +9,19 @@ module "vpc" {
     project_name = var.project_name
     environment = var.environment
     vpc_tags = var.vpc_tags
+
+
+# public subnets
+public_subnet_cidrs = var.public_subnet_cidrs
+
+# private subnets
+private_subnet_cidrs = var.private_subnet_cidrs
+
+# private subnets
+database_subnet_cidrs = var.database_subnet_cidrs
+
 }
+
+# data "aws_availability_zones" "available" {
+#   state = "available"
+# }
