@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "remote-state-aki"
+    bucket = "remote-state-akira"
     key    = "vpc-module-demo"
     region = "us-east-1"
     use_lockfile = true
